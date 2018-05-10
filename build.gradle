@@ -1,0 +1,62 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {                                  // <-- Add this
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.7.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+// Define versions in a single place
+ext {
+    configuration = [
+            package             : "com.openup",
+            buildToolsVersion   : "26.0.1",
+            compileVersion      : 26,
+            minSdk              : 16,
+            minSdk21            : 21,
+            targetSdk           : 26,
+            version_code        : 2,
+            version_name        : "2.5.55"
+    ]
+
+    libraries = [
+            supportVersion      : "26.0.1",
+            retrofit            : "2.1.0",
+            butterknife         : "8.7.0",
+            glide               : "3.7.0",
+            constraint          : "1.0.2",
+            crashlytics         : "2.6.8@aar",
+            timberVersion       : "4.5.1",
+            rxandroidVersion    : "2.0.1",
+            rxjava2Version      : "2.0.6",
+            rxjavaAdapter       : "2.0.2",
+    ]
+
+    testingLibraries = [
+            junit               : "4.12"
+    ]
+}

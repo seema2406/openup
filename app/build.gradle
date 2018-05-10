@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+def cfg = rootProject.ext.configuration
+def libs = rootProject.ext.libraries;
+def test = rootProject.ext.testingLibraries;
+
+
+android {
+    compileSdkVersion cfg.compileVersion
+    buildToolsVersion cfg.buildToolsVersion
+
+    defaultConfig {
+        applicationId cfg.package
+        minSdkVersion cfg.minSdk
+        targetSdkVersion cfg.targetSdk
+        versionCode cfg.version_code
+        versionName cfg.version_name
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+
+        File secretsExists = new File("secrets.properties")
+        if (secretsExists.exists()) {
+            def secretsFile = rootProject.file('secrets.properties')
+            def secrets = new Properties()
+            secrets.load(new FileInputStream(secretsFile))
+
+            buildConfigField "String", "BASE_URL", secrets.getProperty('BASE_URL')
+
+        } else {
+
+            buildConfigField "String", "BASE_URL", "\"Please update Base url.\""
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+            ext.alwaysUpdateBuildId = false
+            // crashlytics generates new buildId for each build disable it to optimise build time
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support.constraint:constraint-layout:1.1.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testCompile "junit:junit:${test.junit}"
+
+    compile "com.android.support:appcompat-v7:${libs.supportVersion}"
+    compile "com.android.support:recyclerview-v7:${libs.supportVersion}"
+    compile "com.android.support:cardview-v7:${libs.supportVersion}"
+    compile "com.android.support:design:${libs.supportVersion}"
+    compile "com.android.support.constraint:constraint-layout:${libs.constraint}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${libs.butterknife}"
+    compile "com.jakewharton:butterknife:${libs.butterknife}"
+    compile "com.squareup.retrofit2:retrofit:${libs.retrofit}"
+    compile "com.squareup.retrofit2:converter-gson:${libs.retrofit}"
+    compile "com.squareup.retrofit2:adapter-rxjava:${libs.rxjavaAdapter}"
+    compile "com.github.bumptech.glide:glide:${libs.glide}"
+    // logger
+    compile "com.jakewharton.timber:timber:$libs.timberVersion"
+
+}
