@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_signup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp30">
+        <ImageView
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150"
+            android:src="@mipmap/logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp60"
+            android:layout_marginTop="@dimen/dp30"/>
+        <com.openup.widgets.OpenUpTextview
+            android:id="@+id/google_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/google_login"
+            android:background="@drawable/white_bg"
+            android:padding="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dp30"
+            android:drawableStart="@mipmap/google_icon"
+            android:drawablePadding="@dimen/dp20"
+            style="@style/textviewbold"
+            android:textColor="@color/black"/>
+        <com.openup.widgets.OpenUpTextview
+            android:id="@+id/facebook_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/facebook_login"
+            android:background="@drawable/white_bg"
+            android:padding="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dp60"
+            android:drawableStart="@mipmap/facebook_icon"
+            android:drawablePadding="@dimen/dp20"
+            style="@style/textviewbold"
+            android:textColor="@color/black" />
+
+        <com.openup.widgets.OpenUpTextview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            android:gravity="center_horizontal"
+            style="@style/textviewbold"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

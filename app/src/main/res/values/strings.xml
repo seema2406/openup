@@ -8,6 +8,39 @@
     <string name="api_retry_error">Please retry!</string>
     <string name="api_default_error">Something wrong happened!</string>
     <string name="some_error">Some Error Occurred!</string>
-    <string name="connection_error">Internet connection lost!</string>
+
+    <!--login screen-->
+    <string name="google_login">Continue with Google</string>
+    <string name="facebook_login">Continue with Facebook</string>
+    <string name="terms_conditions">By Signing Up, I agree OpenUp\'s Terms of Service and Privacy Policy</string>
+
+    <!--create profile-->
+    <string name="create_profile_txt">Create Your Profile</string>
+    <string name="name_txt">Name</string>
+    <string name="next">NEXT</string>
+    <string name="status">Status</string>
+    <string name="single">SINGLE</string>
+    <string name="taken">TAKEN</string>
+    <string name="profile_final_txt">Help us know you better</string>
+    <string name="begin">BEGIN</string>
+
+    <!--questions-->
+    <string name="choose_one">Choose One</string>
+
+    <!--single profile-->
+    <string name="profile">Profile</string>
+    <string name="attended">Attended</string>
+    <string name="hosted">Hosted</string>
+    <string name="photos">Photos</string>
+    <string name="about">About</string>
+    <string name="about_me">About me</string>
+    <string name="about_me_hint">Tell us something about you(140 character)</string>
+    <string name="dob">D.O.B.</string>
+    <string name="address">Address</string>
+    <string name="user_name">Seema Nagar</string>
+    <string name="status_txt">Born to live</string>
+
+
+
 
 </resources>

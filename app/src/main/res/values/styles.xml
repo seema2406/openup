@@ -8,15 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--<style name="textviewregular" parent="@android:style/Widget.TextView">
-        <item name="font">notosans-regular.ttf</item>
+    <style name="textviewregular" parent="@android:style/Widget.TextView">
+        <item name="typeface">notosans-regular.ttf</item>
     </style>
     <style name="textviewbold">
-        <item name="font">notosans-bold.ttf</item>
+        <item name="typeface">notosans-bold.ttf</item>
     </style>
 
     <style name="textviewitalic">
-        <item name="font">notosans-italic.ttf</item>
-    </style>-->
+        <item name="typeface">notosans-italic.ttf</item>
+    </style>
+
+    <style name="ThemeToolbar">
+        <!-- navigation icon color -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
 
 </resources>

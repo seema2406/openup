@@ -36,7 +36,7 @@ ext {
             package             : "com.openup",
             buildToolsVersion   : "26.0.1",
             compileVersion      : 26,
-            minSdk              : 16,
+            minSdk              : 19,
             minSdk21            : 21,
             targetSdk           : 26,
             version_code        : 2,
@@ -54,6 +54,7 @@ ext {
             rxandroidVersion    : "2.0.1",
             rxjava2Version      : "2.0.6",
             rxjavaAdapter       : "2.0.2",
+            circularImageView   : "3.0.2"
     ]
 
     testingLibraries = [
