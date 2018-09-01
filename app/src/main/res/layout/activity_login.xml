@@ -30,7 +30,20 @@
             android:drawablePadding="@dimen/dp20"
             style="@style/textviewbold"
             android:textColor="@color/black"/>
-        <com.openup.widgets.OpenUpTextview
+        <!--<com.openup.widgets.OpenUpTextview
+            android:id="@+id/facebook_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/facebook_login"
+            android:background="@drawable/white_bg"
+            android:padding="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/dp60"
+            android:drawableStart="@mipmap/facebook_icon"
+            android:drawablePadding="@dimen/dp20"
+            style="@style/textviewbold"
+            android:textColor="@color/black" />-->
+        <com.facebook.login.widget.LoginButton
             android:id="@+id/facebook_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

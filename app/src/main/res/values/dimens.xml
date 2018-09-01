@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <dimen name="dp0">0dp</dimen>
     <dimen name="dp0.5">0.5dp</dimen>
     <dimen name="dp1">1dp</dimen>
@@ -54,5 +54,11 @@
     <dimen name="sp32">32sp</dimen>
     <dimen name="sp36">36sp</dimen>
     <dimen name="sp40">40sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">0sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">0sp</dimen>
 
 </resources>

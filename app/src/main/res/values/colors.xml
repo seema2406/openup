@@ -11,4 +11,14 @@
     <color name="bb_darkBackgroundColor">#212121</color>
     <color name="img_background">#EEEEEE</color>
 
+    <!--onboarding colors-->
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">1dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#000000</color>
+    <dimen name="default_circle_indicator_stroke_width">2dp</dimen>
+
 </resources>

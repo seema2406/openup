@@ -2,14 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white_smoke">
+    android:gravity="center">
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/dp300"
         android:layout_height="400dp"
         android:background="@drawable/white_bg"
         android:elevation="@dimen/dp4"
-        android:layout_margin="@dimen/dp30"
         android:gravity="center">
         <LinearLayout
             android:layout_width="200dp"
@@ -24,16 +22,18 @@
                 android:text="@string/status"
                 android:textSize="@dimen/sp18"/>
             <com.openup.widgets.OpenUpTextview
+                android:id="@+id/status_single"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/single"
-                android:background="@drawable/blue_border_round_bg"
-                android:textColor="@color/colorPrimary"
+                android:background="@drawable/gray_border_round"
+                android:textColor="@color/dark_gray"
                 style="@style/textviewbold"
                 android:padding="@dimen/dp6"
                 android:layout_marginTop="@dimen/dp56"
                 android:gravity="center"/>
             <com.openup.widgets.OpenUpTextview
+                android:id="@+id/status_taken"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/taken"
@@ -44,6 +44,7 @@
                 android:layout_marginTop="@dimen/dp32"
                 android:gravity="center"/>
             <com.openup.widgets.OpenUpTextview
+                android:id="@+id/next_user_status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/next"

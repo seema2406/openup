@@ -2,14 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white_smoke">
+    android:gravity="center">
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/dp300"
+
         android:layout_height="400dp"
         android:background="@drawable/white_bg"
         android:elevation="@dimen/dp4"
-        android:layout_margin="@dimen/dp30"
         android:gravity="center">
         <LinearLayout
             android:layout_width="200dp"
@@ -25,6 +24,7 @@
                 android:textSize="@dimen/sp18"
                 android:gravity="center"/>
             <com.openup.widgets.OpenUpTextview
+                android:id="@+id/begin_btn"
                 android:layout_width="@dimen/dp150"
                 android:layout_height="@dimen/dp150"
                 android:text="@string/begin"

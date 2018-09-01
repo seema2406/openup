@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "949946282487",
+    "firebase_url": "https://openup-335fe.firebaseio.com",
+    "project_id": "openup-335fe",
+    "storage_bucket": "openup-335fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949946282487:android:ef06315d24bbe77f",
+        "android_client_info": {
+          "package_name": "com.openup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949946282487-u961cfq2eeo8v5d7bfsk2veaa1gn90hg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.openup",
+            "certificate_hash": "7c6bfd66451368b3a16bdff8fc3d38d8d0088e6e"
+          }
+        },
+        {
+          "client_id": "949946282487-tndp13tsk07p4h7elf3t5l8k4rl98mvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr_gtc7xGMaWiKCLB-YByEdEc9LXjfRDg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949946282487-tndp13tsk07p4h7elf3t5l8k4rl98mvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

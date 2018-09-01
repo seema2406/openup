@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp2">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/default_usr_img"
+            app:civ_border_color="@color/img_background"
+            app:civ_border_width="@dimen/dp1"
+            app:civ_shadow="false"
+            app:civ_shadow_color="@color/bb_darkBackgroundColor"
+            android:id="@+id/item_image" />
+    </LinearLayout>
+
+</LinearLayout>

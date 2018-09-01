@@ -1,4 +1,4 @@
-package com.openup.widgets;
+package com.openup.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,7 +6,6 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.openup.utils.FontCache;
 import com.openup.R;
 
 

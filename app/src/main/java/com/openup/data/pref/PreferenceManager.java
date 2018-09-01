@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 /**
  * Created by Nilesh Deokar on 03/09/15.
  */
-public class PreferenceManager implements IPreferenceHelper {
+public class PreferenceManager {
 
     public static final String USER_ID = "USER_ID";
     public static final String FIRST_NM = "fname";
@@ -149,7 +149,7 @@ public class PreferenceManager implements IPreferenceHelper {
         editor.commit();
     }
 
-    @Override public int getCurrentUserLoggedInMode() {
+    /*@Override public int getCurrentUserLoggedInMode() {
         return 0;
     }
 
@@ -195,6 +195,6 @@ public class PreferenceManager implements IPreferenceHelper {
 
     @Override public void setAccessToken(String accessToken) {
 
-    }
+    }*/
 }
 

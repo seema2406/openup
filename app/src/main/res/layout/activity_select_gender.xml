@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.openup.activities.SelectGenderActivity"
+    android:background="@color/white_smoke"
+    android:orientation="vertical">
+    <com.openup.widgets.OpenUpTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_one"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp24"
+        android:gravity="center_horizontal"
+        style="@style/textviewbold"
+        android:layout_marginBottom="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp24"/>
+    <include layout="@layout/item_questions"/>
+
+</LinearLayout>

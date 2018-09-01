@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.openup.widgets.OpenUpTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bashes"
+        android:textColor="@color/colorPrimary"
+        style="@style/textviewbold"
+        android:textSize="@dimen/sp40"/>
+    <com.openup.widgets.OpenUpTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/around_you"
+        android:textColor="@color/colorPrimaryDark"
+        style="@style/textviewbold"
+        android:textSize="@dimen/sp18"/>
+<ImageView
+    android:layout_width="@dimen/dp100"
+    android:layout_height="@dimen/dp100"
+    android:src="@mipmap/bash_icon"
+    android:layout_marginTop="@dimen/dp32"
+    android:layout_marginBottom="@dimen/dp32"/>
+    <com.openup.widgets.OpenUpTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_openup"
+        android:textColor="@color/colorPrimaryDark"
+        style="@style/textviewbold"
+        android:textSize="@dimen/sp18"/>
+</LinearLayout>

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="@color/white_smoke"
     android:gravity="center_horizontal">
-    <com.openup.widgets.OpenUpTextview
+   <!-- <com.openup.widgets.OpenUpTextview
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/choose_one"
@@ -15,11 +15,11 @@
         android:gravity="center_horizontal"
         style="@style/textviewbold"
         android:layout_marginBottom="@dimen/dp24"
-        android:layout_marginTop="@dimen/dp24"/>
+        android:layout_marginTop="@dimen/dp24"/>-->
     <ImageView
+        android:id="@+id/select1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/bike_01"
         android:minHeight="@dimen/dp150"/>
     <ImageView
         android:layout_width="wrap_content"
@@ -28,8 +28,8 @@
         android:layout_marginTop="@dimen/dp24"
         android:layout_marginBottom="@dimen/dp24"/>
     <ImageView
+        android:id="@+id/select2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/bike_02"
         android:minHeight="@dimen/dp150"/>
 </LinearLayout>

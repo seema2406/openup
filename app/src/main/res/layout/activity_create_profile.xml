@@ -4,6 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.openup.activities.CreateProfileActivity">
+    tools:context="com.openup.activities.CreateProfileActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white_smoke">
+    <com.openup.widgets.OpenUpTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_profile_txt"
+        style="@style/textviewbold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp24"
+        android:layout_marginTop="@dimen/dp16"/>
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/create_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    <com.openup.utils.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:foregroundGravity="center"
+        app:fillColor="@color/colorPrimary"
+        app:snap="false"
+        app:strokeColor="@color/colorPrimary"
+        android:layout_marginBottom="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"/>
+    <android.support.v4.view.ViewPager
+        android:background="@color/white_smoke"
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

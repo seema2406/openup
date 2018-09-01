@@ -7,15 +7,13 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.openup.models.UserModel;
-
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by Nilesh Deokar on 7/9/2015.
  */
-public class DataBaseHelperNew extends SQLiteOpenHelper implements IDbHelper {
+public class DataBaseHelperNew extends SQLiteOpenHelper {
 
     public static final String TAG = "DataBaseHelperNew";
     // SQLiteDatabase database;
@@ -512,54 +510,7 @@ public class DataBaseHelperNew extends SQLiteOpenHelper implements IDbHelper {
         return null;
     }
 
-    @Override
-    public Long insertUser(UserModel user) {
-        return null;
-    }
 
-    public UserModel getUserModel() {
-
-        SQLiteDatabase db = openWriteDatabase();
-        //db.rawQuery("",new String []{});
-        Cursor cursor = db.rawQuery("select * from " + TABLE_USER_NEW, null);
-
-
-        UserModel um = new UserModel();
-        // looping through all rows and adding to list
-        try {
-
-            if (cursor.moveToFirst()) {
-                do {
-
-                    um.id = (cursor.getString(cursor.getColumnIndex(KEY_USER_ID)));
-                    um.mFirstName= (cursor.getString(cursor.getColumnIndex(KEY_FNAME)));
-                    um.mLastName = (cursor.getString(cursor.getColumnIndex(KEY_LNAME)));
-                    um.mProfilePic= (cursor.getString(cursor.getColumnIndex(KEY_PROFILE_PIC)));
-              /*      um.mEmail = (cursor.getString(cursor.getColumnIndex(KEY_EMAIL)));
-                    um.mCity = (cursor.getString(cursor.getColumnIndex(KEY_CITY_NAME)));
-                    um.mPin = (cursor.getString(cursor.getColumnIndex(KEY_PINCODE)));
-                    um.mBirthday = (cursor.getString(cursor.getColumnIndex(KEY_DOB)));
-                    um.mGender = (cursor.getString(cursor.getColumnIndex(KEY_GENDER)));
-                    um.gcmid = (cursor.getString(cursor.getColumnIndex(KEY_GCM_ID)));
-                    um.mMobile = (cursor.getString(cursor.getColumnIndex(KEY_MOBNO)));
-                    um.mTags = (cursor.getString(cursor.getColumnIndex(KEY_TAGS)));
-                    um.mWorkExp = (cursor.getString(cursor.getColumnIndex(KEY_WORK_EXP)));
-                    um.mEducation = (cursor.getString(cursor.getColumnIndex(KEY_EDUCATION)));
-                    um.isMobVerified = cursor.getInt(cursor.getColumnIndex(KEY_IS_MOB_VERIFIED));
-                    um.cityId = cursor.getInt(cursor.getColumnIndex(KEY_CITY_ID));
-*/
-                } while (cursor.moveToNext());
-
-            }
-
-            cursor.close();
-            closeDatabase();
-        } catch (SQLiteException e) {
-            e.printStackTrace();
-        }
-
-        return null;
-    }
 
 
 

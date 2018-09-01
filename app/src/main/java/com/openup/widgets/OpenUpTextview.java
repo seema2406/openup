@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
+import com.openup.utils.CustomFontHelper;
+
 /**
  * Created by acer on 12/13/2017.
  */

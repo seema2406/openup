@@ -4,6 +4,8 @@
     <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
     <string name="app_market_link">"market://details?id="</string>
     <string name="app_crashlytics_id">"id1212421nasf"</string>
+    <string name="facebook_app_id">192374631426587</string>
+    <string name="fb_login_protocol_scheme">fb192374631426587</string>
 
     <string name="api_retry_error">Please retry!</string>
     <string name="api_default_error">Something wrong happened!</string>
@@ -21,6 +23,9 @@
     <string name="status">Status</string>
     <string name="single">SINGLE</string>
     <string name="taken">TAKEN</string>
+    <string name="gender">Select Gender</string>
+    <string name="male">MALE</string>
+    <string name="female">FEMALE</string>
     <string name="profile_final_txt">Help us know you better</string>
     <string name="begin">BEGIN</string>
 
@@ -39,8 +44,37 @@
     <string name="address">Address</string>
     <string name="user_name">Seema Nagar</string>
     <string name="status_txt">Born to live</string>
+    <string name="title_activity_app_main">AppMainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_bash">Bash</string>
+    <string name="title_search">Search</string>
+    <string name="title_profile">Profile</string>
 
+    <!--notifications-->
+    <string name="notifications">Notifications</string>
+    <string name="attending">Attending</string>
+    <string name="hosting">Hosting</string>
+    <string name="notification_txt">Laxmi accepted your request to join her House party</string>
+    <string name="notify_time">15 minutes ago</string>
 
+    <!--party details page-->
+    <string name="details">Details</string>
+    <string name="interested">INTERESTED</string>
+    <string name="request_sent">REQUEST SENT</string>
+    <string name="joined">JOINED</string>
+    <string name="description">Description</string>
+    <string name="description_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley </string>
+    <string name="bash_title">Old Monk Night</string>
+    <string name="bash_date">Mar 23,2018</string>
+    <string name="bash_time">7.30 pm Onwards</string>
+    <string name="bash_address">Pitchers Cafe and Bar, Vijay Nagar</string>
+    <string name="people_attending">People Attending</string>
+    <string name="hosted_by">Hosted By</string>
 
+    <!--explore bash-->
+    <string name="bashes">BASHES</string>
+    <string name="around_you">AROUND YOU</string>
+    <string name="tap_openup">Tap to OpenUp</string>
 
 </resources>

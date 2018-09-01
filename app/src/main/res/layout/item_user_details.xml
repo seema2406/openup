@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white">
+    android:gravity="center">
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/dp300"
         android:layout_height="400dp"
         android:background="@drawable/white_bg"
         android:elevation="@dimen/dp4"
-        android:layout_margin="@dimen/dp30"
         android:gravity="center">
         <LinearLayout
             android:layout_width="@dimen/dp200"
@@ -49,10 +48,16 @@
                 android:text="@string/name_txt"
                 android:textColor="@color/black"
                 style="@style/textviewbold"/>
-            <EditText
+            <com.openup.widgets.OpenUpEditText
+                android:id="@+id/username"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/dark_gray"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:gravity="center"/>
             <com.openup.widgets.OpenUpTextview
+                android:id="@+id/next_user_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/next"
